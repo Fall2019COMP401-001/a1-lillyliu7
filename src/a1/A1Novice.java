@@ -15,16 +15,16 @@ public class A1Novice {
 			String last = scan.next();
 			int noOfItem = scan.nextInt();
 			double priceTotal = 0;
-			String priceTotalF = "";
+			String priceTotalFinal = "";
 			for (int j=0; j<noOfItem; j++) {
 				int howMany = scan.nextInt();
 				String name = scan.next();
 				double price = scan.nextDouble();
 				priceTotal += price * howMany;
-				priceTotalF = String.format("%.2f", priceTotal);
+				priceTotalFinal = String.format("%.2f", priceTotal);
 			}
 			char firstLetter = first.charAt(0);
-			System.out.println(firstLetter + ". " + last + ": " + priceTotalF);
+			System.out.println(firstLetter + ". " + last + ": " + priceTotalFinal);
 			
 		}
 		
