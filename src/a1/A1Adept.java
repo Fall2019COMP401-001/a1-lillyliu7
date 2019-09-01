@@ -44,15 +44,16 @@ public class A1Adept {
 					if (name.equals(itemArray[n])) {
 						price = priceArray[n];
 					}
-					priceTotalNum += price * countUnit;
 				}
+				
+				priceTotalNum += price * countUnit;
 			
 			}
 			
 			priceTotal[i] = priceTotalNum;
 		}
 		
-	
+		
 		double max = 0;
 		String maxFirst = "";
 		String maxLast = "";
