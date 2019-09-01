@@ -68,7 +68,8 @@ public class A1Jedi {
 			if (countArray[i] == 0) {
 				System.out.println("No customers bought " + itemArray[i]);
 			} else {
-				System.out.println(countArray[i] + " customers bought " + itemArray[i]);
+				System.out.println(countArray[i] + " customers bought " + howManyArray[i] + " "
+						+ itemArray[i]);
 			}
 		}
 		scan.close();
