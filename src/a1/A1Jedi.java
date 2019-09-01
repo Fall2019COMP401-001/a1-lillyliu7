@@ -37,7 +37,7 @@ public class A1Jedi {
 			first[i] = scan.next();
 			last[i] = scan.next();
 			int countProduct = scan.nextInt();
-			String[] name = new String[countCustomer];
+			String[] name = new String[countProduct];
 			
 			for (int j=0; j < countProduct; j++) {
 				int countUnit = scan.nextInt();
