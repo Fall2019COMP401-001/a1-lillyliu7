@@ -18,6 +18,8 @@ public class A1Jedi {
 		
 		int[] countArray = new int[countIndex];
 		
+		int[] howManyArray = new int[countIndex];
+		
 		for (int i=0; i < countIndex; i++) {
 			itemArray[i] = scan.next();
 			priceArray[i] = scan.nextDouble();
@@ -51,6 +53,9 @@ public class A1Jedi {
 				for (int n=0; n < countIndex; n++) {
 					if (name[j].equals(itemArray[n]) && a) {
 						countArray[n] += 1;
+						howManyArray[n] += countUnit;
+					} else if (name[j].equals(itemArray[n]) && !a) {
+						howManyArray[n] += countUnit;
 					}
 				}
 				
